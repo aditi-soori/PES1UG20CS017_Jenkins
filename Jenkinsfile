@@ -18,9 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'echo "Deploying the application"' // add your deploy commands here
-                sh 'kubectl apply -f deployment.yaml' // example deploy command
-                sh 'kubectl apply -f service.yaml' // example deploy command
-                sh 'echo "Deployment completed"'
+                
             }
         }
     }
