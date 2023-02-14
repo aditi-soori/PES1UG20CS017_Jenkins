@@ -17,8 +17,8 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                sh 'echo "Deploying the application"' // add your deploy commands here
-                
+                sh 'mvn deploy'
+                echo "Deployment successful"  
             }
         }
     }
